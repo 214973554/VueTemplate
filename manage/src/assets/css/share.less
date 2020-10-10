@@ -1,0 +1,23 @@
+// 主色
+@mainColor: #D62D32;
+
+//文字超出一行加省略号
+.txtOverflow(@width: 100%) {
+	display: block;
+	width: @width;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+//文字超出2行加省略号
+.txtOverflow2() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	/*! autoprefixer: off */
+	-webkit-box-orient: vertical;
+}
+
